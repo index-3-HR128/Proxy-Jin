@@ -2,13 +2,37 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
     <title>airbnb proxy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;700&display=swap" rel="stylesheet">
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+    <!-- <script>
+      $(document).scroll(function() {
+      var y = $(document).scrollTop(), //get page y value
+          header = $("#calendar"); // your div id
+      if(y >= 650)  {
+        console.log('hihi')
+          header.css({position: "fixed", "top" : "0", "left" : "0"});
+      } else {
+          header.css("position", "static");
+      }
+  });</script> -->
   </head>
-  <body>
-    <div id='photogallery'></div>
-    <div id='calendar'></div>
-    <div id='reviews'></div>
-    <div id='carousel'></div>
+  <body id="proxyBody" style='all: unset;'>
+    <div>
+      <div class="topBar"><img class="topBarImg" src="./top-bar.png" /></div>
+      <div id='photogallery'></div>
+      <div class="propertyInfoCalendarWrapper">
+        <div class="propertyInfo"><img class="propertyInfoImg"  src="./property-info.png" /></div>
+        <div id='calendar'></div>
+      </div>
+      <div class="amenities"><img class="amenitiesImg"src="./amenities.png" /></div>
+      <div id='reviews'></div>
+      <div id='carousel'></div>
+    </div>
     <script src="http://localhost:3001/calendar/bundle.js"></script>
     <script src="http://localhost:3004/photogallery//bundle.js"></script>
     <script src="http://localhost:3002/reviews/bundle.js"></script>

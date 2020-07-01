@@ -1,0 +1,64 @@
+#proxyBody {
+  width: 100%;
+  height: 100%;
+}
+
+.topBarImg {
+  display: inline-block;
+  width: 100%;
+}
+
+#photogallery {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.propertyInfo {
+  display: inline-block;
+  width: 70%;
+}
+
+.propertyInfoImg {
+  display: inline-block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.propertyInfoCalendarWrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 70%;
+  padding: 35px 0;
+}
+
+#calendar {
+  display: inline-block;
+  width: 100%;
+  position: absolute;
+  margin-left: 7px;
+  padding: 0;
+}
+
+.amenities {
+  display: inline-block;
+  width: 50%;
+  position: relative;
+  left: 15%
+}
+
+.amenitiesImg {
+  width: 100%;
+  height: 100%;
+}
+
+#reviews {
+  display: block;
+  position: relative;
+  padding: 25px 15%;
+}
+
+#carousel {
+  width: 70%;
+  margin: 0 auto;
+  border-bottom: 100px solid white;
+}
